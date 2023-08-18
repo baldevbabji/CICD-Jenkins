@@ -8,6 +8,7 @@ public class SpringCicdApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCicdApplication.class, args);
+		System.out.println("Service Build: Successfull");
 	}
 
 }
