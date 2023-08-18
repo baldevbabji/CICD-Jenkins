@@ -19,6 +19,7 @@ public class CalculatorServiceTest {
     @Test
     public void testAddition() {
         assertEquals(5, calculatorService.add(2, 3));
+        System.out.print("TestCase-1: Successfull");
     }
 
     @Test
