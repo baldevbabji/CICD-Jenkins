@@ -7,6 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class SpringCicdApplicationTests {
 	@Test
 	void contextLoads() {
-		System.out.println("TestCases: Successfull");
+	}
+	String console(){
+		return "TestCases Successful";
 	}
 }
