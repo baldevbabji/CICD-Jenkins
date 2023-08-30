@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
+    @GetMapping()
+    public String message(){
+        return "Hi Docker, This is a Calculator Application";
+    }
     @GetMapping(value = "/calculator/add/{a}/{b}")
     public double add(@PathVariable double a, @PathVariable double b){
         CalculatorService cs = new CalculatorService();
