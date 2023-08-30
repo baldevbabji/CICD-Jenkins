@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @GetMapping()
+    @GetMapping(value = "/String")
     public String message(){
         return "Hi Docker, This is a Calculator Application";
     }
