@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @GetMapping(value = "/calculator/add/{a}/{b}")
+    @GetMapping(value = "/calculator/adds/{a}/{b}")
     public double add(@PathVariable double a, @PathVariable double b){
         CalculatorService cs = new CalculatorService();
         return cs.add(a, b);
