@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping(value = "/String")
     public String message(){
-        return "Hi Docker, This is a Calculator Application";
+        return "Hi Docker, This is a Calculator Application im added a point";
     }
     @GetMapping(value = "/calculator/add/{a}/{b}")
     public double add(@PathVariable double a, @PathVariable double b){
